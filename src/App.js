@@ -1,17 +1,11 @@
 import React from "react";
-import Input from './Input';
 import Search from "./Search/Search";
-import { PrimaryButton, SecondaryButton } from "./Buttons/Buttons";
-import styled from 'styled-components';
-
-const Container = styled.div`
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-`;
+import {
+  container as Container,
+  input as Input,
+  PrimaryButton,
+  SecondaryButton,
+} from './styles';
 
 function App() {
   return (

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import style, { attrs } from '../styles/search'
 
 const Search = ({ search, className, containerStyle }) => {
   return (
@@ -9,15 +10,8 @@ const Search = ({ search, className, containerStyle }) => {
   );
 }
 
-export const StyledSearch = styled(Search).attrs({
-  containerStyle: {
-    border: '1px solid #eee',
-    borderRadius: 10,
-    padding: 10
-  },
-})`
-  color: #333;
-  font-size: 40px;
+const StyledSearch = styled(Search).attrs(attrs)`
+  ${style}
 `;
 
 export default StyledSearch;
